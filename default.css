@@ -4,6 +4,11 @@ body {
     color: blue;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
 #input-time,
 #daily-time,
 #weekly-time {
@@ -17,6 +22,7 @@ body {
     border: 1px solid blue;
     font-size: 1.5em;
     color: blue;
+    margin-bottom: 1em;
 }
 
 #elapsed-time-button,
@@ -29,10 +35,11 @@ body {
     border: 1px solid blue;
     border-radius: 10px;
     font-size: 1.5em;
+    margin-top: 0;
 }
 
 #time-diff {
-    margin-left: 1em;
+    margin: 1em;
     width: 5em;
     font-size: 1.5em;
     border: 1px solid blue;
@@ -40,10 +47,13 @@ body {
 }
 
 #start-time-label,
-#stop-time-label {
+#stop-time-label,
+#sum-of-hours-label,
+#sum-of-minutes-label,
+#weekly-sum-of-hours-label,
+#weekly-sum-of-minutes-label {
     color: blue;
     font-size: 1.5em;
-    margin-left: 1em;
 }
 
 #sum-of-hours,
@@ -54,4 +64,12 @@ body {
     font-size: 1.5em;
     border: 1px solid blue;
     color: blue;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+#sum-of-minutes,
+#weekly-sum-of-minutes {
+    margin-bottom: 1em;
 }
