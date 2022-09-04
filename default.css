@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, 'Times New Roman';
+    margin: 1.5em;
+    color: blue;
+}
+
+#input-time,
+#daily-time,
+#weekly-time {
+    border: 1px solid blue;
+    padding: 2em;
+    margin-bottom: 1.5em;
+}
+
+#input-time1,
+#input-time2 {
+    font-size: 1.3em;;
+    border: 1px solid blue;
+    color: blue;
+}
+
+#elapsed-time-button,
+#add-to-daily-time-button,
+#clear-daily-button,
+#clear-weekly-button,
+#add-to-weekly-time-button {
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+#time-diff {
+    margin-left: 1em;
+    width: 5em;
+    font-size: 1.1em;
+    border: 1px solid blue;
+    color: blue;
+}
+
+#calculate-button {
+    font-size: 24px;
+    border-width: 5px;
+}
+
+#sum-of-hours,
+#sum-of-minutes,
+#weekly-sum-of-hours,
+#weekly-sum-of-minutes {
+    width: 3em;
+    font-size: 1.1em;
+    border: 1px solid blue;
+    color: blue;
+}
