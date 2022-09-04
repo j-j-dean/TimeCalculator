@@ -8,39 +8,47 @@
     <script src="timecalculator.js"></script>
 </head>
 <body>
-    <div id="input-time">
+    <div id="input-time" class="flex-container">
         <h1 id="time-calculator-title">Time Calculator</h1>
-        <input type="time" id="input-time1"></input>
-        <label id="start-time-label">Start Time</label>
-        <br></br>
-        <input type="time" id="input-time2"></input>
-        <label id="stop-time-label">Stop Time</label>
+        <div>
+            <input type="time" id="input-time1"></input>
+            <label id="start-time-label">Start Time</label>
+        </div>
+        <div>
+            <input type="time" id="input-time2"></input>
+            <label id="stop-time-label">Stop Time</label>
+        </div>
         <h3 id='info-label'></h3>
         <button id="elapsed-time-button" onclick="calculatorApp.calculate()">Elapsed Time</button>
         <input type="text" id="time-diff"></input>
-        <br></br>
         <button id="add-to-daily-time-button" onclick="calculatorApp.addToDaily()">Add to Daily Time</button>
     </div>
 
-    <div id="daily-time">
+    <div id="daily-time" class="flex-container">
         <h1 id="daily-total-title">Daily Time Total</h1>
         <button id="clear-daily-button" onclick="calculatorApp.clearDaily()">Clear</button>
-        <br></br>
-        <input type="number" id="sum-of-hours" value="0">&nbsphours</input>
-        <br></br>
-        <input type="number" id="sum-of-minutes" value=0>&nbspminutes</input>
-        <br></br>
+        <div>
+            <input type="number" id="sum-of-hours" value="0"></input>
+            <label id="sum-of-hours-label">hours</label>
+        </div>
+        <div>
+            <input type="number" id="sum-of-minutes" value=0></input>
+            <label id="sum-of-minutes-label">minutes</label>
+        </div>
         <button id="add-to-weekly-time-button" onclick="calculatorApp.addToWeekly()">Add to Weekly Time</button>
     </div>
 
-    <div id="weekly-time">
+    <div id="weekly-time" class="flex-container">
         <h1 id=weekly-total-title">Weekly Time Total</h1>
         <button id="clear-weekly-button" onclick="calculatorApp.clearWeekly()">Clear</button>
-        <br></br>
-        <input type="number" id="weekly-sum-of-hours" value="0">&nbsphours</input>
-        <br></br>
-        <input type="number" id="weekly-sum-of-minutes" value="0">&nbspminutes</input>
-        <br></br>
+        <div>
+            <input type="number" id="weekly-sum-of-hours" value="0"></input>
+            <label id="weekly-sum-of-hours-label">hours</label>
+        </div>
+        <div>
+            <input type="number" id="weekly-sum-of-minutes" value="0"></input>
+            <label id="weekly-sum-of-minutes-label">minutes</label>
+        </div>
     </div>
 
 </body>
