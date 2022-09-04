@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, 'Times New Roman';
+    font-family:  Arial, 'Times New Roman';
     margin: 1.5em;
     color: blue;
 }
@@ -14,8 +14,8 @@ body {
 
 #input-time1,
 #input-time2 {
-    font-size: 1.3em;;
     border: 1px solid blue;
+    font-size: 1.5em;
     color: blue;
 }
 
@@ -28,20 +28,22 @@ body {
     color: white;
     border: 1px solid blue;
     border-radius: 10px;
-    font-size: 1.1em;
+    font-size: 1.5em;
 }
 
 #time-diff {
     margin-left: 1em;
     width: 5em;
-    font-size: 1.1em;
+    font-size: 1.5em;
     border: 1px solid blue;
     color: blue;
 }
 
-#calculate-button {
-    font-size: 24px;
-    border-width: 5px;
+#start-time-label,
+#stop-time-label {
+    color: blue;
+    font-size: 1.5em;
+    margin-left: 1em;
 }
 
 #sum-of-hours,
@@ -49,7 +51,7 @@ body {
 #weekly-sum-of-hours,
 #weekly-sum-of-minutes {
     width: 3em;
-    font-size: 1.1em;
+    font-size: 1.5em;
     border: 1px solid blue;
     color: blue;
 }
