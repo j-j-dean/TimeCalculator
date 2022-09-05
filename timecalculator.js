@@ -73,9 +73,13 @@ calculatorApp.calculate = function() {
 
     if  (validTime) {
         timeHourDiff = stopHour - startHour;
+        timeMinuteDiff = stopMinute - startMinute;
+        if (timeMinuteDiff < 0) {
+            timeMinuteDiff += 60;
+            timeHourDiff--;
+        }
         timeHourDiffStr = timeHourDiff.toString();
         if (timeHourDiffStr.length < 2) timeHourDiffStr = "0" + timeHourDiffStr;
-        timeMinuteDiff = stopMinute - startMinute;
         timeMinuteDiffStr = timeMinuteDiff.toString();
         if (timeMinuteDiffStr.length < 2) timeMinuteDiffStr = "0" + timeMinuteDiffStr;
         $('#time-diff').val(timeHourDiffStr+":"+timeMinuteDiffStr);
